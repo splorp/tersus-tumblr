@@ -53,7 +53,6 @@
     </style>
 </head>
 <body>
-    <div id="wrapper">
         <div id="title">
             <a href="/">
                 {block:IfHeaderImage}<img src="{image:Header}" />{/block:IfHeaderImage}
@@ -286,11 +285,9 @@
                     <li><a href="/mobile">{lang:Mobile}</a></li>
                 </ul>
                 
-            <div id="copyright">&copy; {CopyrightYears} <a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a></div>
+            <p>&copy; {CopyrightYears} <a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
         </div>
-        
-    </div>
-    
+            
     {block:Twitter}
         <script type="text/javascript" src="/tweets.js"></script>
     {/block:Twitter}
