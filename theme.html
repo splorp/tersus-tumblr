@@ -148,20 +148,22 @@
                     {/block:Link}
                     
                     {block:Date}
-                        <a href="{Permalink}">
-                            <div class="footer for_permalink">
-                                <div class="date">
-                                    {block:Reblog}
-                                        {lang:Reblogged TimeAgo from ReblogParentName} {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">{lang:Originally from ReblogRootName}</span>){/block:RebloggedFromReblog}
-                                    {/block:Reblog}
-                                    
-                                    {block:NotReblog}
-                                        {lang:Posted TimeAgo from source}
-                                    {/block:NotReblog}
-                                </div>
-                                <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
-                            </div>
-                        </a>
+                        
+						<div class="footer for_permalink">
+							<div class="date">
+								<a href="{Permalink}">
+								{block:Reblog}
+									{lang:Reblogged TimeAgo from ReblogParentName} {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">{lang:Originally from ReblogRootName}</span>){/block:RebloggedFromReblog}
+								{/block:Reblog}
+								
+								{block:NotReblog}
+									{lang:Posted TimeAgo from source}
+								{/block:NotReblog}
+								</a>
+							</div>
+							<div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
+						</div>
+                        
                     {/block:Date}
                     
                     <div class="footer {block:ContentSource}with_source_url{/block:ContentSource}" style="
@@ -250,11 +252,11 @@
                     <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
                 </div>
                 
-                <a href="http://www.tumblr.com/follow/{Name}"><div class="heading" id="followontumblr">{lang:Follow on Tumblr}</div></a>
+                <div class="heading" id="followontumblr"><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a></div>
                 
                 {block:Twitter}
                 <div id="twitterwrapper" style="display:none;">
-                    <a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;"><div class="heading" id="twitter">{lang:Latest Tweets}</div></a>
+                    <div class="heading" id="twitter"><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></div>
                     <div id="tweetcontainer"></div>
                     <script type="text/javascript">
                         function recent_tweets(data) {
