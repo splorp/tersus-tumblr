@@ -57,7 +57,7 @@
         <div id="title">
             <a href="/">
                 {block:IfHeaderImage}<img src="{image:Header}" />{/block:IfHeaderImage}
-                {block:IfNotHeaderImage}{Title}{/block:IfNotHeaderImage}
+                {block:IfNotHeaderImage}<h1>{Title}</h1>{/block:IfNotHeaderImage}
             </a>
         </div>
         
@@ -291,22 +291,15 @@
                     {/block:Following}
                 {/block:IfShowPeopleIFollow}
                 
-                <div id="buttons">
-                    <div class="row">
-                        <div class="button" id="button-rss"><a href="{RSS}">{lang:RSS feed}</a></div>
-                        <div class="button" id="button-random"><a href="/random">{lang:Random}</a></div>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="row">
-                        <div class="button" id="button-archive"><a href="/archive">{lang:Archive}</a></div>
-                        <div class="button" id="button-mobile"><a href="/mobile">{lang:Mobile}</a></div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                <ul id="buttons">
+					<li><a href="{RSS}">{lang:RSS feed}</a></li
+                    <li><a href="/random">{lang:Random}</a></li>
+					<li><a href="/archive">{lang:Archive}</a></li>
+                    <li><a href="/mobile">{lang:Mobile}</a></li>
+                </ul>
                 
             </div>
             
-            <div id="bottom"></div>
             <div id="copyright">&copy; {CopyrightYears} <a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a></div>
         </div>
         
