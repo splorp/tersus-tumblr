@@ -10,9 +10,25 @@ About
 
 -----------------------------------------------------------
 
-Tersus is an exercise in publishing template minimalism.
+Tersus for Tumblr is an exercise in publishing template
+minimalism, based on the orginal Tersus for Wordpress theme.
 
+http://github.com/splorp/tersus/
 
+Why create yet another theme? As clean and stripped down as
+some themes are, we wanted to prune things a bit further.
+
+Tersus was originally called Simplicity, a name that was
+suggested prior to the discovery of a WordPress theme
+already using that name. After a brief discussion, several
+latin terms were bandied about as replacements. Tersus
+(which means ‘clean, neat, or cleansed’) seemed to fit the
+bill rather nicely ... and here we are.
+
+To view a recent version of Tersus for Tumblr in action,
+head on over to the official tumblelog:
+
+http://tersustheme.tumblr.com/
 
 
 -----------------------------------------------------------
@@ -21,9 +37,9 @@ Features
 
 -----------------------------------------------------------
 
-+ HTML5
 + Reset and base stylesheets provide a clean start
-+ Non-semantic, presentational classes have been removed
++ Non-semantic, presentational classes are being removed
++ This damn code will validate, even if it kills us
 
 
 -----------------------------------------------------------
