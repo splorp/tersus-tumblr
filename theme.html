@@ -1,14 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <!-- DEFAULT VARIABLES -->
+
     <meta name="if:Show People I Follow" content="1" />
     <meta name="if:Show Tags" content="1" />
     <meta name="if:Show Album Art on Audio Posts" content="1" />
     <meta name="if:Enable Jump Pagination" content="0" />
-    
     <meta name="text:Disqus Shortname" content="" />
-    
     <meta name="image:Header" content="" />
     <meta name="image:Background" content="" />
     
@@ -273,7 +271,7 @@
                 {/block:IfShowPeopleIFollow}
                 
                 <ul id="buttons">
-					<li><a href="{RSS}">{lang:RSS feed}</a></li>
+					<li><a href="{RSS}">{lang:RSS Feed}</a></li>
                     <li><a href="/random">{lang:Random}</a></li>
 					<li><a href="/archive">{lang:Archive}</a></li>
                     <li><a href="/mobile">{lang:Mobile}</a></li>
@@ -282,7 +280,9 @@
         </div>
 
 		<div id="footer">
-			<p>&copy; {CopyrightYears} <a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
+			<p>Copyright &copy; {CopyrightYears}</p>
+			<p><a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
+			<p><a href="http://github.com/splorp/tersus-tumblr">{lang:Themed by Tersus}</a></p>
         </div>
 
     {block:Twitter}
