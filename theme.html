@@ -54,10 +54,8 @@
 </head>
 <body>
         <div id="header">
-            <a href="/">
-                {block:IfHeaderImage}<img src="{image:Header}" />{/block:IfHeaderImage}
-                {block:IfNotHeaderImage}<h1>{Title}</h1>{/block:IfNotHeaderImage}
-            </a>
+			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" /></a>{/block:IfHeaderImage}
+			{block:IfNotHeaderImage}<h1><a href="/">{Title}</a></h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
         </div>
         
