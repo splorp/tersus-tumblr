@@ -2,12 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <!-- DEFAULT VARIABLES -->
-    <meta name="color:Background" content="#3b627e" />
-    
-    <meta name="font:Title" content="Arial" />
-    <meta name="font:Body" content="Arial" />
-    <meta name="font:Accent" content="Lucida Sans" />
-    
     <meta name="if:Show People I Follow" content="1" />
     <meta name="if:Show Tags" content="1" />
     <meta name="if:Show Album Art on Audio Posts" content="1" />
@@ -54,7 +48,7 @@
 </head>
 <body>
         <div id="header">
-			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" /></a>{/block:IfHeaderImage}
+			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
 			{block:IfNotHeaderImage}<h1><a href="/">{Title}</a></h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
         </div>
@@ -88,7 +82,7 @@
                         {block:IfShowAlbumArtOnAudioPosts}
                             {block:AlbumArt}
                                 <div class="album_art">
-                                    <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" style="margin-bottom:10px;" />
+                                    <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" />
                                 </div>
                             {/block:AlbumArt}
                         {/block:IfShowAlbumArtOnAudioPosts}
@@ -127,7 +121,7 @@
                             <div class="nipple"></div>
                             {Question}
                         </div>
-                        <div class="asker_container"><img src="{AskerPortraitURL-24}">{Asker}</div>
+                        <div class="asker_container"><img src="{AskerPortraitURL-24}" alt="{Asker}" />{Asker}</div>
                         <div class="copy">{Answer}</div>
                     {block:Answer}
                     
@@ -226,7 +220,7 @@
         </div>
         
         <div id="sidebar">
-                <div id="avatar"><a href="/"><img src="{PortraitURL-128}" /></a></div>
+                <div id="avatar"><a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a></div>
                 
                 <div id="pages" class="ask_and_submit">
                     {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
@@ -273,7 +267,7 @@
                     {block:Following}
                         <div class="heading" id="following">{lang:Following}</div>
                         <div class="content" id="following-avatars">
-                            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
+                            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" alt="{FollowedTitle}" /></a>{/block:Followed}
                         </div>
                     {/block:Following}
                 {/block:IfShowPeopleIFollow}
