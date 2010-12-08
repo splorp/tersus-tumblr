@@ -59,6 +59,7 @@
                 {block:IfHeaderImage}<img src="{image:Header}" />{/block:IfHeaderImage}
                 {block:IfNotHeaderImage}<h1>{Title}</h1>{/block:IfNotHeaderImage}
             </a>
+			<p>{Description}</p>
         </div>
         
         <div id="content">
@@ -227,7 +228,6 @@
         
         <div id="sidebar">
                 <div id="avatar"><a href="/"><img src="{PortraitURL-128}" /></a></div>
-                <div id="description">{Description}</div>
                 
                 <div id="pages" class="ask_and_submit">
                     {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
