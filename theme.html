@@ -98,9 +98,7 @@
                         <div class="audio">
                             <div class="player">{AudioPlayerWhite}</div>
                             <div class="meta">{PlayCountWithLabel}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
-                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
                         {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
                     {/block:Audio}
                     
@@ -144,8 +142,6 @@
                                 {/block:Lines}
                             </div>
                         </div>
-                        <div class="clear"></div>
-                        <div style="height:10px;"></div>
                     {/block:Chat}
                     
                     {block:Link}
@@ -166,7 +162,6 @@
                                     {/block:NotReblog}
                                 </div>
                                 <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
-                                <div class="clear"></div>
                             </div>
                         </a>
                     {/block:Date}
@@ -187,8 +182,6 @@
                                 {block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}
                             </a>
                         {/block:ContentSource}
-                        
-                        <div class="clear"></div>
                     </div>
                     
                     {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
@@ -241,13 +234,11 @@
                 <div id="pages" class="ask_and_submit">
                     {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
                     {block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-                    <div class="clear"></div>
                 </div>
                 
                 {block:HasPages}
                     <div id="pages">
                         {block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
-                        <div class="clear"></div>
                     </div>
                 {/block:HasPages}
                 
@@ -257,7 +248,6 @@
                         <input type="hidden" name="scope" value="all_of_tumblr" />
                         <input type="text" name="q" class="query" value="{SearchQuery}" />
                         <input type="submit" value="{lang:Search}" class="submit" />
-                        <div class="clear"></div>
                     </form>
                 </div>
                 <div id="search-scope">
@@ -303,7 +293,6 @@
             <div id="copyright">&copy; {CopyrightYears} <a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a></div>
         </div>
         
-        <div class="clear"></div>
     </div>
     
     {block:Twitter}
