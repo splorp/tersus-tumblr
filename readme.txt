@@ -30,6 +30,10 @@ head on over to the official tumblelog:
 
 http://tersustheme.tumblr.com/
 
+Keep track of Tersus development on Twitter.
+
+http://twitter.com/tersustheme
+
 
 -----------------------------------------------------------
 
