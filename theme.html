@@ -93,20 +93,11 @@
                     {/block:Audio}
                     
                     {block:Quote}
-                        <div class="quote {Length}">{Quote}</div>
-                        <div class="copy">
-                            <div class="quotebg">“</div>
-                            {block:Source}
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                        <td valign="top" style="width:20px;">&mdash;</td>
-                                        <td valign="top" class="quote_source">
-                                            {Source}
-                                        </td>
-                                    </tr>
-                                </table>
-                            {/block:Source}
-                        </div>
+                        <h2>“{Quote}”</h2>
+						{block:Source}
+							<p>Source:</p>
+							<div class="quote_source">{Source}</div>
+						{/block:Source}
                     {/block:Quote}
                         
                     {block:Text}
