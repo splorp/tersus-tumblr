@@ -244,8 +244,6 @@
                     <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
                 </div>
                 
-                <div class="heading" id="followontumblr"><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a></div>
-                
                 {block:Twitter}
                 <div id="twitterwrapper" style="display:none;">
                     <div class="heading" id="twitter"><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></div>
@@ -271,7 +269,8 @@
                 {/block:IfShowPeopleIFollow}
                 
                 <ul id="buttons">
-					<li><a href="{RSS}">{lang:RSS Feed}</a></li>
+                	<li><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow}</a></li>
+					<li><a href="{RSS}">{lang:Subscribe}</a></li>
                     <li><a href="/random">{lang:Random}</a></li>
 					<li><a href="/archive">{lang:Archive}</a></li>
                     <li><a href="/mobile">{lang:Mobile}</a></li>
