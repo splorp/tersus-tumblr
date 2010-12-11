@@ -94,10 +94,7 @@
                     
                     {block:Quote}
                         <h2>“{Quote}”</h2>
-						{block:Source}
-							<p>Source:</p>
-							<div class="quote_source">{Source}</div>
-						{/block:Source}
+						{block:Source}<p>— {Source}</p>{/block:Source}
                     {/block:Quote}
                         
                     {block:Text}
@@ -260,7 +257,7 @@
                 {/block:IfShowPeopleIFollow}
                 
                 <ul id="buttons">
-                	<li><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow}</a></li>
+                	<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
 					<li><a href="{RSS}">{lang:Subscribe}</a></li>
                     <li><a href="/random">{lang:Random}</a></li>
 					<li><a href="/archive">{lang:Archive}</a></li>
@@ -272,7 +269,7 @@
 		<div id="footer">
 			<p>Copyright &copy; {CopyrightYears}</p>
 			<p><a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
-			<p><a href="http://github.com/splorp/tersus-tumblr">{lang:Themed by Tersus}</a></p>
+			<p><a href="http://github.com/splorp/tersus-tumblr">Themed by Tersus</a></p>
         </div>
 
     {block:Twitter}
