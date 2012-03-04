@@ -1,7 +1,7 @@
 
 Tersus
 
-An achingly simple Tumblr theme without the usual cruft.
+An achingly simple Tumblr theme without all the usual cruft.
 
 
 -----------------------------------------------------------
