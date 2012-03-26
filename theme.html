@@ -19,9 +19,8 @@
 	</head>
 	<body>
         <header>
-			<a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a>
 			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
-			{block:IfNotHeaderImage}<h1><a href="/">{Title}</a></h1>{/block:IfNotHeaderImage}
+			{block:IfNotHeaderImage}<h1>{block:PermalinkPage}<a href="/">{/block:PermalinkPage}{Title}{block:PermalinkPage}</a>{/block:PermalinkPage}</h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
         </header>
         
