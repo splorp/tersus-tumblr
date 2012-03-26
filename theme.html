@@ -198,30 +198,6 @@
 				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
 			</div>
 			
-			{block:Twitter}
-			<div id="twitterwrapper" style="display:none;">
-				<div class="heading" id="twitter"><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></div>
-				<div id="tweetcontainer"></div>
-				<script type="text/javascript">
-					function recent_tweets(data) {
-						document.getElementById("twitterwrapper").style.display = "block";
-						for(i = 0; i < data.length; i++) {
-							document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>';
-						}
-					}
-				</script>
-			</div>
-			{/block:Twitter}
-			
-			{block:IfShowPeopleIFollow}
-				{block:Following}
-					<div class="heading" id="following">{lang:Following}</div>
-					<div class="content" id="following-avatars">
-						{block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" alt="{FollowedTitle}" /></a>{/block:Followed}
-					</div>
-				{/block:Following}
-			{/block:IfShowPeopleIFollow}
-			
 			<ul id="buttons">
 				<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
 				<li><a href="{RSS}">{lang:Subscribe}</a></li>
@@ -238,10 +214,6 @@
 			<p><a href="http://github.com/splorp/tersus-tumblr">Themed by Tersus</a></p>
         </footer>
 
-    {block:Twitter}
-        <script type="text/javascript" src="/tweets.js"></script>
-    {/block:Twitter}
-    
     {block:IfDisqusShortname}
         <script type="text/javascript">
             //<![CDATA[
