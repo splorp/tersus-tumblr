@@ -1,50 +1,47 @@
-<head>
-
-    <meta name="if:Show People I Follow" content="1" />
-    <meta name="if:Show Tags" content="1" />
-    <meta name="if:Show Album Art on Audio Posts" content="1" />
-    <meta name="if:Enable Jump Pagination" content="0" />
-    <meta name="text:Disqus Shortname" content="" />
-    <meta name="image:Header" content="" />
-    <meta name="image:Background" content="" />
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
-    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-    <link rel="shortcut icon" href="{Favicon}" />
-    <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
-    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-    <style type="text/css">
-
-		/*
-			Tersus Reset CSS
-		
-			Portions based on YUI Reset CSS 2.8.2
-			Copyright (c) 2010, Yahoo! Inc. All rights reserved.
-			Code licensed under the BSD License:
-			http://developer.yahoo.com/yui/license.html
-		*/
-		
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta name="if:Show People I Follow" content="1" />
+		<meta name="if:Show Tags" content="1" />
+		<meta name="if:Show Album Art on Audio Posts" content="1" />
+		<meta name="if:Enable Jump Pagination" content="0" />
+		<meta name="text:Disqus Shortname" content="" />
+		<meta name="image:Header" content="" />
+		<meta name="image:Background" content="" />
 		
-		html { color: #000; background: #FFF; } body, button, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; background: transparent; } table { border-collapse: collapse; border-spacing: 0; } fieldset, img { border: 0; } address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style: inherit; font-weight: inherit; } del, ins { text-decoration: none; } li { list-style: none; } caption, th { text-align: left; } h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } q:before, q:after { content: ''; } abbr, acronym { border: 0; font-variant: normal; } sup { vertical-align: baseline; } sub { vertical-align: baseline; } input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; } :focus { outline: 0; } 
-
-		/*
-			Tersus Base CSS
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+		{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+		<link rel="shortcut icon" href="{Favicon}" />
+		<link rel="apple-touch-icon" href="{PortraitURL-128}" />
+		<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+		<style type="text/css">
+	
+			/*
+				Tersus Reset CSS
 			
-			Portions based on YUI Base CSS 2.8.2
-			Copyright (c) 2010, Yahoo! Inc. All rights reserved.
-			Code licensed under the BSD License:
-			http://developer.yahoo.com/yui/license.html
-		*/
-		
-		
-		body { margin: 10px; } h1 { font-size: 2.5em; } h2 { font-size: 1.5em; } h3 { font-size: 1.2em; } h1, h2, h3 { margin: 0.5em 0; } h1, h2, h3, h4, h5, h6, strong, dt { font-weight: bold; } optgroup { font-weight: normal; } abbr, acronym { border-bottom: 1px dotted #000; cursor: help; } em { font-style: italic; } del { text-decoration: line-through; } blockquote, ul, ol, dl { margin: 1em; } ol, ul, dl { margin-left: 2em; } ol li { list-style: decimal outside; } ul li { list-style: disc outside; } dl dd { margin-left: 1em; } th, td { border: 1px solid #000; padding: .5em; } th { font-weight: bold; text-align: center; } caption { margin-bottom: .5em; text-align: center; } sup { vertical-align: super; } sub { vertical-align: sub; } p, fieldset, table, pre { margin-bottom: 1em; } button, input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"] { padding:1px; } a img { border: none; }     
-
-    </style>
-</head>
-<body>
+				Portions based on YUI Reset CSS 2.8.2
+				Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+				Code licensed under the BSD License:
+				http://developer.yahoo.com/yui/license.html
+			*/
+			
+			html { color: #000; background: #FFF; } body, button, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; background: transparent; } table { border-collapse: collapse; border-spacing: 0; } fieldset, img { border: 0; } address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style: inherit; font-weight: inherit; } del, ins { text-decoration: none; } li { list-style: none; } caption, th { text-align: left; } h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } q:before, q:after { content: ''; } abbr, acronym { border: 0; font-variant: normal; } sup { vertical-align: baseline; } sub { vertical-align: baseline; } input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; } :focus { outline: 0; } 
+	
+			/*
+				Tersus Base CSS
+				
+				Portions based on YUI Base CSS 2.8.2
+				Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+				Code licensed under the BSD License:
+				http://developer.yahoo.com/yui/license.html
+			*/
+			
+			body { margin: 10px; } h1 { font-size: 2.5em; } h2 { font-size: 1.5em; } h3 { font-size: 1.2em; } h1, h2, h3 { margin: 0.5em 0; } h1, h2, h3, h4, h5, h6, strong, dt { font-weight: bold; } optgroup { font-weight: normal; } abbr, acronym { border-bottom: 1px dotted #000; cursor: help; } em { font-style: italic; } del { text-decoration: line-through; } blockquote, ul, ol, dl { margin: 1em; } ol, ul, dl { margin-left: 2em; } ol li { list-style: decimal outside; } ul li { list-style: disc outside; } dl dd { margin-left: 1em; } th, td { border: 1px solid #000; padding: .5em; } th { font-weight: bold; text-align: center; } caption { margin-bottom: .5em; text-align: center; } sup { vertical-align: super; } sub { vertical-align: sub; } p, fieldset, table, pre { margin-bottom: 1em; } button, input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"] { padding:1px; } a img { border: none; }     
+	
+		</style>
+	</head>
+	<body>
         <header>
 			<div id="avatar"><a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a></div>
 			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
@@ -206,65 +203,65 @@
             
         </section>
         
-                
-                <div id="pages" class="ask_and_submit">
-                    {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
-                    {block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-                </div>
-                
-                {block:HasPages}
-                    <div id="pages">
-                        {block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
-                    </div>
-                {/block:HasPages}
-                
-                <div id="search">
-                    <form action="/search" method="get" id="search-form">
-                        <input type="hidden" name="t" value="{Name}" />
-                        <input type="hidden" name="scope" value="all_of_tumblr" />
-                        <input type="text" name="q" class="query" value="{SearchQuery}" />
-                        <input type="submit" value="{lang:Search}" class="submit" />
-                    </form>
-                </div>
-                <div id="search-scope">
-                    <input type="radio" id="search-scope-me" name="scope" checked="checked" onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
-                    <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
-                </div>
-                
-                {block:Twitter}
-                <div id="twitterwrapper" style="display:none;">
-                    <div class="heading" id="twitter"><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></div>
-                    <div id="tweetcontainer"></div>
-                    <script type="text/javascript">
-                        function recent_tweets(data) {
-                            document.getElementById("twitterwrapper").style.display = "block";
-                            for(i = 0; i < data.length; i++) {
-                                document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>';
-                            }
-                        }
-                    </script>
-                </div>
-                {/block:Twitter}
-                
-                {block:IfShowPeopleIFollow}
-                    {block:Following}
-                        <div class="heading" id="following">{lang:Following}</div>
-                        <div class="content" id="following-avatars">
-                            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" alt="{FollowedTitle}" /></a>{/block:Followed}
-                        </div>
-                    {/block:Following}
-                {/block:IfShowPeopleIFollow}
-                
-                <ul id="buttons">
-                	<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
-					<li><a href="{RSS}">{lang:Subscribe}</a></li>
-                    <li><a href="/random">{lang:Random}</a></li>
-					<li><a href="/archive">{lang:Archive}</a></li>
-                    <li><a href="/mobile">{lang:Mobile}</a></li>
-                </ul>
-                
-        </div>
         <sidebar>
+
+			<div id="pages" class="ask_and_submit">
+				{block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
+				{block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
+			</div>
+			
+			{block:HasPages}
+				<div id="pages">
+					{block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
+				</div>
+			{/block:HasPages}
+			
+			<div id="search">
+				<form action="/search" method="get" id="search-form">
+					<input type="hidden" name="t" value="{Name}" />
+					<input type="hidden" name="scope" value="all_of_tumblr" />
+					<input type="text" name="q" class="query" value="{SearchQuery}" />
+					<input type="submit" value="{lang:Search}" class="submit" />
+				</form>
+			</div>
+			<div id="search-scope">
+				<input type="radio" id="search-scope-me" name="scope" checked="checked" onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
+				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
+			</div>
+			
+			{block:Twitter}
+			<div id="twitterwrapper" style="display:none;">
+				<div class="heading" id="twitter"><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></div>
+				<div id="tweetcontainer"></div>
+				<script type="text/javascript">
+					function recent_tweets(data) {
+						document.getElementById("twitterwrapper").style.display = "block";
+						for(i = 0; i < data.length; i++) {
+							document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + data[i].id + '"><div class="content">' + data[i].text + '</div></a>';
+						}
+					}
+				</script>
+			</div>
+			{/block:Twitter}
+			
+			{block:IfShowPeopleIFollow}
+				{block:Following}
+					<div class="heading" id="following">{lang:Following}</div>
+					<div class="content" id="following-avatars">
+						{block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" alt="{FollowedTitle}" /></a>{/block:Followed}
+					</div>
+				{/block:Following}
+			{/block:IfShowPeopleIFollow}
+			
+			<ul id="buttons">
+				<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
+				<li><a href="{RSS}">{lang:Subscribe}</a></li>
+				<li><a href="/random">{lang:Random}</a></li>
+				<li><a href="/archive">{lang:Archive}</a></li>
+				<li><a href="/mobile">{lang:Mobile}</a></li>
+			</ul>
+			
+        </sidebar>
 
 		<footer>
 			<p>Copyright &copy; {CopyrightYears}</p>
@@ -292,5 +289,6 @@
             //]]>
         </script>
     {/block:IfDisqusShortname}
-</body>
+
+	</body>
 </html>
