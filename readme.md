@@ -6,13 +6,11 @@ An achingly simple Tumblr theme without all the usual cruft.
 
 ## About
 
-Tersus is an exercise in publishing template minimalism.
+Tersus is an exercise in publishing template minimalism, based on the orginal [Tersus for Wordpress](http://github.com/splorp/tersus/) theme.
 
 Why create yet another theme? As clean and stripped down as some themes are, we wanted to prune things a bit further.
 
 Tersus was originally named Simplicity — a term that described exactly what the project was all about. However, that was prior to the discovery of a [WordPress](http://wordpress.org/) theme already using that very name. After a brief discussion, several latin terms were bandied about as replacements. Tersus (which means ‘clean, neat, or cleansed’) seemed to fit the bill rather nicely … and here we are.
-
-A version of Tersus is also being developed for [WordPress](http://tersustheme.com/) and is [available on GitHub](http://github.com/splorp/tersus/).
 
 Keep track of Tersus development on [Twitter](http://twitter.com/tersustheme).
 
@@ -28,7 +26,7 @@ Keep track of Tersus development on [Twitter](http://twitter.com/tersustheme).
 
 ## Credits
 
-Tersus is brought to you by [Chris Harrison](http://cdharrison.com/), [Grant Hutchinson](http://splorp.com/), [Dan Rubin](http://danielrubin.org/), and [Andy van der Raadt](http://nicemodernist.com/).
+The Tersus project is brought to you by [Chris Harrison](http://cdharrison.com/), [Grant Hutchinson](http://splorp.me/), [Dan Rubin](http://danielrubin.org/), and [Andy van der Raadt](http://nicemodernist.com/).
 
 Lovely chaps, all of them.
 
