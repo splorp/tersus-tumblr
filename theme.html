@@ -46,6 +46,7 @@
 </head>
 <body>
         <div id="header">
+			<div id="avatar"><a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a></div>
 			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
 			{block:IfNotHeaderImage}<h1><a href="/">{Title}</a></h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
@@ -206,7 +207,6 @@
         </div>
         
         <div id="sidebar">
-                <div id="avatar"><a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a></div>
                 
                 <div id="pages" class="ask_and_submit">
                     {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
