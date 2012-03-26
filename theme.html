@@ -1,5 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
     <meta name="if:Show People I Follow" content="1" />
@@ -27,6 +25,8 @@
 			http://developer.yahoo.com/yui/license.html
 		*/
 		
+<!DOCTYPE html>
+<html>
 		
 		html { color: #000; background: #FFF; } body, button, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; background: transparent; } table { border-collapse: collapse; border-spacing: 0; } fieldset, img { border: 0; } address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style: inherit; font-weight: inherit; } del, ins { text-decoration: none; } li { list-style: none; } caption, th { text-align: left; } h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; } q:before, q:after { content: ''; } abbr, acronym { border: 0; font-variant: normal; } sup { vertical-align: baseline; } sub { vertical-align: baseline; } input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; } :focus { outline: 0; } 
 
@@ -45,14 +45,14 @@
     </style>
 </head>
 <body>
-        <div id="header">
+        <header>
 			<div id="avatar"><a href="/"><img src="{PortraitURL-128}" alt="{Title}" /></a></div>
 			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
 			{block:IfNotHeaderImage}<h1><a href="/">{Title}</a></h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
-        </div>
+        </header>
         
-        <div id="content">
+        <section>
             
             {block:SearchPage}
                 {block:SearchResults}
@@ -65,7 +65,7 @@
             {/block:SearchPage}
             
             {block:Posts}
-                <div class="post">
+                <article>
                     
                     {block:Photo}
                         <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
@@ -180,7 +180,7 @@
                         {/block:Permalink}
                     {/block:IfDisqusShortname}
                     
-                </div>
+                </article>
             {/block:Posts}
             
             {block:Pagination}
@@ -204,9 +204,8 @@
                 </div>
             {/block:Pagination}
             
-        </div>
+        </section>
         
-        <div id="sidebar">
                 
                 <div id="pages" class="ask_and_submit">
                     {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
@@ -265,12 +264,13 @@
                 </ul>
                 
         </div>
+        <sidebar>
 
-		<div id="footer">
+		<footer>
 			<p>Copyright &copy; {CopyrightYears}</p>
 			<p><a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
 			<p><a href="http://github.com/splorp/tersus-tumblr">Themed by Tersus</a></p>
-        </div>
+        </footer>
 
     {block:Twitter}
         <script type="text/javascript" src="/tweets.js"></script>
