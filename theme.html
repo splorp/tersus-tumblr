@@ -97,8 +97,7 @@
 						{lang:Posted TimeAgo from source}
 					{/block:NotReblog}
 				</a></p>
-
-					<div>{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount} — {/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
+				<p>{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount} — {/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</p>
 			{/block:Date}
 			
 			{block:IfShowTags}
@@ -122,9 +121,6 @@
 						<div id="disqus_thread"></div>
 						<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
 						<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-					</div>
-					<div style="text-align:right; margin-top:5px;">
-						{lang:Blog comments powered by Disqus 2}
 					</div>
 				{/block:Permalink}
 			{/block:IfDisqusShortname}
