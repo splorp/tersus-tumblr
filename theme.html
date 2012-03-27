@@ -37,28 +37,25 @@
 			<article>
 				
 			{block:Photo}
-				<div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+				<div>{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
 				{block:Caption}<p>{Caption}</p>{/block:Caption}
 			{/block:Photo}
 			
 			{block:Video}
-				<div class="media">{Video-500}</div>
+				<div>{Video-500}</div>
 				{block:Caption}<p>{Caption}</p>{/block:Caption}
 			{/block:Video}
 			
 			{block:Audio}
 				{block:IfShowAlbumArtOnAudioPosts}
 					{block:AlbumArt}
-						<div class="album_art">
-							<img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" />
-						</div>
+						<img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}" />
 					{/block:AlbumArt}
 				{/block:IfShowAlbumArtOnAudioPosts}
 				
-				<div class="audio">
-					<div class="player">{AudioPlayerWhite}</div>
-					<div class="meta">{PlayCountWithLabel}{block:ExternalAudio}<span class="download_external_audio"> &bull; <a href="{ExternalAudioURL}">{lang:Download}</a></span>{/block:ExternalAudio}</div>
-				</div>
+				<div>{AudioPlayerWhite}</div>
+				<p>{PlayCountWithLabel}</p>
+				{block:ExternalAudio}<p><a href="{ExternalAudioURL}">{lang:Download}</a></p>{/block:ExternalAudio}
 				{block:Caption}<p>{Caption}</p>{/block:Caption}
 			{/block:Audio}
 			
@@ -73,21 +70,16 @@
 			{/block:Text}
 			
 			{block:Answer}
-				<div class="question">
-					<div class="nipple"></div>
-					{Question}
-				</div>
-				<div class="asker_container"><img src="{AskerPortraitURL-24}" alt="{Asker}" />{Asker}</div>
-				<div class="copy">{Answer}</div>
+				<h2>{Question}</h2>
+				<p><img src="{AskerPortraitURL-24}" alt="{Asker}" /> {Asker}</p>
+				<p>{Answer}</p>
 			{block:Answer}
 			
 			{block:Chat}
-				{block:Title}<div class="title">{Title}</div>{/block:Title}
-				<div class="chat">
-					<div class="lines">
-						{block:Lines}
-							<div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
-						{/block:Lines}
+				{block:Title}<h2>{Title}</h2>{/block:Title}
+				{block:Lines}
+					<p>{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</p>
+				{/block:Lines}
 					</div>
 				</div>
 			{/block:Chat}
@@ -108,7 +100,7 @@
 					{/block:NotReblog}
 				</a></p>
 
-					<div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
+					<div>{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount} — {/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
 				</div>
 			{/block:Date}
 			
@@ -125,11 +117,11 @@
 				<p><a href="{SourceURL}">{lang:Source}: {block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo} {block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}</a></p>
 			{/block:ContentSource}
 			
-			{block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
+			{block:PostNotes}<div>{PostNotes}</div>{/block:PostNotes}
 			
 			{block:IfDisqusShortname}
 				{block:Permalink}
-					<div class="notecontainer" style="margin:20px 0 1px 0; padding:1px 10px 10px 10px;">
+					<div>
 						<div id="disqus_thread"></div>
 						<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
 						<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
@@ -144,26 +136,22 @@
 		{/block:Posts}
 		
 		{block:Pagination}
-			<div id="navigation" {block:IfEnableJumpPagination}class="jump_pagination"{/block:IfEnableJumpPagination}>
-
+			<p>
 			{block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous}</a>{/block:PreviousPage}
 			
 			{block:IfEnableJumpPagination}
-
 				{block:JumpPagination length="5"}
 					{block:CurrentPage}
-						<span class="current_page">{PageNumber}</span>
+						<span>{PageNumber}</span>
 					{/block:CurrentPage}
 					{block:JumpPage}
-						<a class="jump_page" href="{URL}">{PageNumber}</a>
+						<a href="{URL}">{PageNumber}</a>
 					{/block:JumpPage}
 				{/block:JumpPagination}
-
 			{/block:IfEnableJumpPagination}
 			
 			{block:NextPage}<a href="{NextPage}">{lang:Next page} &rarr;</a>{/block:NextPage}
-
-			</div>
+			</p>
 		{/block:Pagination}
             
         </section>
@@ -187,7 +175,7 @@
 				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
 			</form>
 			
-			<ul id="buttons">
+			<ul>
 				<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
 				<li><a href="{RSS}">{lang:Subscribe}</a></li>
 				<li><a href="/random">{lang:Random}</a></li>
