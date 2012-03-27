@@ -5,8 +5,6 @@
 		<meta name="if:Show Album Art on Audio Posts" content="1" />
 		<meta name="if:Enable Jump Pagination" content="0" />
 		<meta name="text:Disqus Shortname" content="" />
-		<meta name="image:Header" content="" />
-		<meta name="image:Background" content="" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>{Title}{block:SearchPage} — Search results for “{SearchQuery}”{/block:SearchPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}</title>
 		{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
@@ -19,8 +17,6 @@
 	</head>
 	<body>
         <header>
-			{block:IfHeaderImage}<a href="/"><img src="{image:Header}" alt="{Title}" /></a>{/block:IfHeaderImage}
-			{block:IfNotHeaderImage}<h1>{block:PermalinkPage}<a href="/">{/block:PermalinkPage}{Title}{block:PermalinkPage}</a>{/block:PermalinkPage}</h1>{/block:IfNotHeaderImage}
 			<p>{Description}</p>
         </header>
         
