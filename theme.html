@@ -170,16 +170,6 @@
         
         <sidebar>
 
-			<div id="pages" class="ask_and_submit">
-				{block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
-				{block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-			</div>
-			
-			{block:HasPages}
-				<div id="pages">
-					{block:Pages}<a href="{URL}" class="page">{Label}</a>{/block:Pages}
-				</div>
-			{/block:HasPages}
 			
 			<div id="search">
 				<form action="/search" method="get" id="search-form">
@@ -190,6 +180,13 @@
 				</form>
 			</div>
 			<div id="search-scope">
+			<ul>
+				{block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
+				{block:SubmissionsEnabled}<li><a href="/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
+				{block:HasPages}
+					{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+				{/block:HasPages}
+			</ul>
 				<input type="radio" id="search-scope-me" name="scope" checked="checked" onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
 				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
 			</div>
