@@ -170,16 +170,6 @@
         
         <sidebar>
 
-			
-			<div id="search">
-				<form action="/search" method="get" id="search-form">
-					<input type="hidden" name="t" value="{Name}" />
-					<input type="hidden" name="scope" value="all_of_tumblr" />
-					<input type="text" name="q" class="query" value="{SearchQuery}" />
-					<input type="submit" value="{lang:Search}" class="submit" />
-				</form>
-			</div>
-			<div id="search-scope">
 			<ul>
 				{block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
 				{block:SubmissionsEnabled}<li><a href="/submit">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
@@ -187,9 +177,15 @@
 					{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
 				{/block:HasPages}
 			</ul>
+						
+			<form action="/search" method="get" id="search-form">
+				<input type="hidden" name="t" value="{Name}" />
+				<input type="hidden" name="scope" value="all_of_tumblr" />
+				<input type="text" name="q" value="{SearchQuery}" />
+				<input type="submit" value="{lang:Search}" />
 				<input type="radio" id="search-scope-me" name="scope" checked="checked" onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
 				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
-			</div>
+			</form>
 			
 			<ul id="buttons">
 				<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
