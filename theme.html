@@ -119,8 +119,8 @@
 				{block:Permalink}
 					<div>
 						<div id="disqus_thread"></div>
-						<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-						<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+						<script type="text/javascript" src="https://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+						<noscript><a href="https://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
 					</div>
 				{/block:Permalink}
 			{/block:IfDisqusShortname}
@@ -166,11 +166,11 @@
 				<input type="text" name="q" value="{SearchQuery}" />
 				<input type="submit" value="{lang:Search}" />
 				<input type="radio" id="search-scope-me" name="scope" checked="checked" onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">{lang:My blog}</label>
-				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://www.tumblr.com/search'">{lang:All of Tumblr}</label>
+				<input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='https://www.tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='https://www.tumblr.com/search'">{lang:All of Tumblr}</label>
 			</form>
 			
 			<ul>
-				<li><a href="http://www.tumblr.com/follow/{Name}">Follow</a></li>
+				<li><a href="https://www.tumblr.com/follow/{Name}">Follow</a></li>
 				<li><a href="{RSS}">{lang:Subscribe}</a></li>
 			{block:AskEnabled}
 			    <li><a href="/ask">{AskLabel}</a></li>
@@ -187,8 +187,8 @@
 
 		<footer>
 			<p>Copyright &copy; {CopyrightYears}</p>
-			<p><a href="http://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
-			<p><a href="http://github.com/splorp/tersus-tumblr">Themed by Tersus</a></p>
+			<p><a href="https://www.tumblr.com/">{lang:Powered by Tumblr}</a></p>
+			<p><a href="https://github.com/splorp/tersus-tumblr">Themed by Tersus</a></p>
         </footer>
 
     {block:IfDisqusShortname}
@@ -202,7 +202,7 @@
                         query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
                     }
                 }
-                document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+                document.write('<script charset="utf-8" type="text/javascript" src="https://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
             })();
             //]]>
         </script>
