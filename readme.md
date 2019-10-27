@@ -31,6 +31,28 @@ The Tersus for Tumblr theme is absolutely free and conveniently licensed under G
 
 ## Version History
 
+### 0.1.2 — The “Seven Year Itch” Release
+
++ Changed `{block:Pagination}` from `p` to `ul` to fix link smushing
++ Reorganized outbound links into more logical groups
++ Updated hardcoded links to https
+
+### 0.1.1 — The “Dorm Room Snowshovel” Release
+
++ Completed HTML5 conversion
++ Moved avatar into header
++ Moved stylesheet into separate file for use via the `{CustomCSS}` tag
++ Tidied the page title formatting
++ Changed `{block:HasPages}` from `div` to `ul` because semantics
++ Decrufted Disqus components
++ Decrufted and reorganized search form
++ Decrufted and declassed pretty much every `div` in sight
++ Removed superfluous tag delimiter class
++ Removed `{block:Twitter}` and `{block:IfShowPeopleIFollow}` crud
++ Removed unnecessary `div` wrappers from several content blocks
++ Removed custom header and background images
++ Added GPL license
+
 ### 0.1.0 — The “Seemed Like A Good Idea At The Time” Release
 
 + Initial tinkering inspired by the WordPress version
