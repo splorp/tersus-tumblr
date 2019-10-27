@@ -34,6 +34,7 @@ The Tersus for Tumblr theme is absolutely free and conveniently licensed under G
 ### 0.1.2 — The “Seven Year Itch” Release
 
 + Changed `{block:Pagination}` from `p` to `ul` to fix link smushing
++ Added some breathing room around the search form elements
 + Reorganized outbound links into more logical groups
 + Updated hardcoded links to https
 
