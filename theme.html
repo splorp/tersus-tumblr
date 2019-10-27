@@ -129,22 +129,22 @@
 		{/block:Posts}
 		
 		{block:Pagination}
-			<p>
-			{block:PreviousPage}<a href="{PreviousPage}">&larr; {lang:Previous}</a>{/block:PreviousPage}
+			<ul>
+			{block:PreviousPage}<li><a href="{PreviousPage}">&larr; {lang:Previous}</a></li>{/block:PreviousPage}
 			
 			{block:IfEnableJumpPagination}
 				{block:JumpPagination length="5"}
 					{block:CurrentPage}
-						<span>{PageNumber}</span>
+						<li><span>{PageNumber}</span></li>
 					{/block:CurrentPage}
 					{block:JumpPage}
-						<a href="{URL}">{PageNumber}</a>
+						<li><a href="{URL}">{PageNumber}</a></li>
 					{/block:JumpPage}
 				{/block:JumpPagination}
 			{/block:IfEnableJumpPagination}
 			
-			{block:NextPage}<a href="{NextPage}">{lang:Next page} &rarr;</a>{/block:NextPage}
-			</p>
+			{block:NextPage}<li><a href="{NextPage}">{lang:Next page} &rarr;</a></li>{/block:NextPage}
+			</ul>
 		{/block:Pagination}
             
         </section>
