@@ -33,10 +33,12 @@ The Tersus for Tumblr theme is absolutely free and conveniently licensed under G
 
 ### 0.1.2 — The “Seven Year Itch” Release
 
-+ Changed `{block:Pagination}` from `p` to `ul` to fix link smushing
++ Added missing `<!DOCTYPE html>` to template
 + Added some breathing room around the search form elements
++ Changed `{block:Pagination}` from `p` to `ul` to fix link smushing
 + Reorganized outbound links into more logical groups
 + Updated hardcoded links to https
+
 
 ### 0.1.1 — The “Dorm Room Snowshovel” Release
 
@@ -53,6 +55,7 @@ The Tersus for Tumblr theme is absolutely free and conveniently licensed under G
 + Removed unnecessary `div` wrappers from several content blocks
 + Removed custom header and background images
 + Added GPL license
+
 
 ### 0.1.0 — The “Seemed Like A Good Idea At The Time” Release
 
