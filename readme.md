@@ -6,7 +6,7 @@ An achingly simple Tumblr theme without all the usual cruft.
 
 ## About
 
-Tersus for Tumblr is an exercise in publishing template minimalism, based on the orginal [Tersus for Wordpress](https://github.com/splorp/tersus/) theme.
+Tersus for Tumblr is an exercise in publishing template minimalism, based on the original [Tersus for Wordpress](https://github.com/splorp/tersus/) theme.
 
 See this theme in action over on [splorp.tumblr.com](https://splorp.tumblr.com/)
 
